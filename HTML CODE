@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kuttarmare's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <header>
+                <h1>Ayush Kuttarmare's Portfolio</h1>
+            </header>
+
+
+            <section id="home" class="section">
+                <div class="rectangle">
+                    <button onclick="scrollToSkills()">Home</button>
+                    <button onclick="scrollToAbout()">About</button>
+                    <button onclick="scrollToSkills()">Skills</button>
+                    <button onclick="scrollToProjects()">Projects</button>
+                    <button onclick="scrollToContact()">Contact Me</button>
+                </div>
+
+                <div class="circle-double">
+                    <div class="circle-outline">
+                        <img src="not.png" alt="Profile Picture" width="300" height="300" >
+                    </div>
+                    <p>Hello Everyone!! I am Ayush Kuttarmare</p>
+                    <p class="about-me-text">I am a Student at Priyadarshini J.L College of Engineering. My main focus is to be a <span class="underline">SQl Developer</span>.</p>
+                    <div style="height: 3cm;"></div>
+                   
+                        <a href=" https://drive.google.com/file/d/1ArvnV-h203_SSDQrpWmkyrFJ2piZoCrt/view?usp=drive_link/uc?export=download&id=YOUR_FILE_ID" target="_blank">Download CV</a>
+                    </button>
+                    
+
+                    <div class="social-icons">
+                        <button class="linkedin" onclick="openLinkedInProfile()">
+                            <img src="linkedin.png" alt="linkedin logo" width="30" height="30">
+                        </button>
+                        <button class="social-icons">
+                            <button class="github" onclick="openGithubProfile()">
+                            <img src="github.jpeg" alt="github logo" width="30" height="30">
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>Hello there! I'm Ayush Kuttarmare, a passionate and dedicated Student with a strong background in Computer Science and Engineering, I thrive on turning innovative ideas into reality.
+
+                        My journey in Programming began there years ago, and since then, I've been on an exciting quest to expand my skills and knowledge. I am a firm believer in lifelong learning and constantly seek out new challenges to grow both personally and professionally.
+                        
+                        My approach to Programming is fueled by creativity, attention to detail, and a commitment to excellence. 
+                        
+                        Outside of work, you can find me Playing Sports, Coocking, or Reading Books. These activities not only provide balance to my life but also inspire me to think outside the box and approach challenges from different perspectives.
+                        
+                        I am incredibly excited about the opportunity to collaborate, learn, and grow together. Feel free to explore my portfolio and reach out if you'd like to connect or discuss potential opportunities. Let's create something amazing together!</p>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="skills">
+                    <h2>My Skills</h2>
+                    <div class="skills-buttons">
+                        <button>HTML</button>
+                        <button>CSS</button>
+                        <button>C</button>
+                        <button>SQL</button>
+                        <button>Python</button>
+                        <button>Core Java</button>
+                        <button>Android Studio</button>
+                        <button>Data Structure and Algorithms</button>
+                        <button>Power BI</button>
+                        <button>Linux Fundamentals</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <div class="project-button">
+                        <button onclick="scrollToProjects()" class="projects-button"></button>
+                    </div>
+                    <div class="project-container">
+                        <!-- Animated project boxes go here -->
+                        <div class="project-box animated">
+                            <h3></h3>
+                            <img src="project1.png" alt="Project 1 Image" width="200" height="150">
+                            <p>AN E-COMMERCE WEBSITE</p>
+                          </div>
+                          
+                          <div class="project-box animated">
+                            <h3></h3>
+                            <img src="project2.jpeg" alt="Project 2 Image" width="200" height="150">
+                            <p>A PORTFOLIO WEBSITE</p>
+                          </div>
+                          
+                          <div class="project-box animated">
+                            <h3></h3>
+                            <img src="project3.png" alt="Project 3 Image" width="200" height="150">
+                            <p>DATA VISUALIZATION USING POWER BI</p>
+                          </div>
+                          
+                          <div class="project-box animated">
+                            <h3></h3>
+                            <img src="project4.jpg" alt="Project 4 Image" width="200" height="150">
+                            <p></p>
+                          </div>
+                          
+                <div class="project-box animated">
+                    <h3></h3>
+                    <p></p>
+            </section>
+            
+            <section id="contact" class="section">
+                <div class="contact-me">
+                    <h2>Contact Me</h2>
+                    <p>Contact me on my email: ayushkuttarmare99@gmail.com</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        function scrollToSkills() {
+            document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollToAbout() {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollToProjects() {
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openLinkedInProfile() {
+            window.open('https://www.linkedin.com/in/ayush-kuttarmare', '_blank');
+        }
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+     function openGithubProfile() {
+    window.open('https://github.com/Aayu2708', '_blank');
+}
+</script>
+
+    
+</body>
+</html>
